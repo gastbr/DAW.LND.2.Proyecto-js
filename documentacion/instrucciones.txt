@@ -1,0 +1,41 @@
+- 5 páginas:
+	-pag Home (con artículos, imágenes y cards)
+	-pag Galería de fotos + algún otro contenido
+	-pag galería de videos + algún otro contenido
+	-pag de contactos con un simple formulario sin acciones + algun otro contenido
+	-otras pag a libre eleccion
+
+HTML:
+-Modelo semántico
+-Meta tags: author, description, keywords
+-Validación
+
+BS:
+- Clases BS:
+    -BS5 Typography
+    -BS5 Alerts
+    -BS5 Spinners
+    -BS5 Dropdowns
+    -BS5 Colors
+    -BS5 Buttons
+    -BS5 Buttons
+    -BS5 Collapse
+    -BS5 Tables
+    -BS5 Button Groups
+    -BS5 Pagination
+    -BS5 Navs
+    -BS5 Images
+    -BS5 Badges
+    -BS5 List Groups
+    -BS5 Navbar
+    -BS5 Jumbotron
+    -BS5 Progress Bars
+    -BS5 Cards
+- BS responsive: desktop, tablets y smartphones
+
+-JS
+	-Resolver problema y mostrarlo en un card, con un botón para pedir el prompt:
+		-Se le pedirá al usuario 2 números para generar la suma, la resta, la división y la multiplicación entre ellos. Se debe preguntar al usuario que operación quiere realizar antes de que ingrese los dos números a operar. Si el usuario no ingresa ninguna respuesta, automáticamente informarle que deberá ingresar un dato (usar funciones y min 1 condicion, caso o ciclo)
+	-Dos botones en cada página que cambien el estilo de imágenes, formulario, párrafos o títulos
+	-Cambiar tamaño y color de letras y fondo de un dropdown mediante JS
+	-Rellenar una tabla (5 lineas y 5 columnas) con valores introducidos mediante prompt, solicitados al pulsar un botón
