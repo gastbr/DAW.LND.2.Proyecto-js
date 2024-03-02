@@ -24,20 +24,26 @@ function calcula(operacion) {
   switch (operacion) {
     case "1":
       resultado = valor1 + valor2;
+      operacionElegida = "SUMA"
       break;
     case "2":
       resultado = valor1 - valor2;
+      operacionElegida = "RESTA"
       break;
     case "3":
       resultado = valor1 * valor2;
+      operacionElegida = "MULTIPLICACIÓN"
       break;
     case "4":
       resultado = valor1 / valor2;
+      operacionElegida = "DIVISIÓN"
       break;
   }
   return resultado;
 }
 
-pideValores();
-let res = calcula(operacionElegida);
-document.getElementById("test").innerHTML = "Resultado = " + res;
+function card() {
+  pideValores();
+  let res = calcula(operacionElegida);
+  document.getElementById("resultado").innerHTML = `Resultado de la ${operacionElegida}<br> de ${valor1} y ${valor2}: ${res}`;
+}
