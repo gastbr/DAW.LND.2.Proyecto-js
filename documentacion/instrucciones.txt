@@ -18,7 +18,6 @@ BS:
     -BS5 Dropdowns
     -BS5 Colors
     -BS5 Buttons
-    -BS5 Buttons
     -BS5 Collapse
     -BS5 Tables
     -BS5 Button Groups
