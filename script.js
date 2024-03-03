@@ -62,7 +62,7 @@ function myFunction() {
   document.getElementById("progreso").style.width = progreso + "%";
 }
 
-document.getElementById("progress").style.height = "5px";
+document.getElementById("progress").style.height = "100px";
 
 // BS5 Alert
 
