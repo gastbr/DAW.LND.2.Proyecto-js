@@ -48,6 +48,16 @@ function card() {
   document.getElementById("resultado").innerHTML = `Resultado de la ${operacionElegida}<br> de ${valor1} y ${valor2}: ${res}`;
 }
 
+ // Dos botones en cada página que cambien el estilo de imágenes, formulario, párrafos o títulos
+
+ function cambiaColor() {
+  
+ }
+
+ // Cambiar tamaño y color de letras y fondo de un dropdown mediante JS
+ 
+ // Rellenar una tabla (5 lineas y 5 columnas) con valores introducidos mediante prompt, solicitados al pulsar un botón
+
 
 // BARRA DE PROGRESO
 

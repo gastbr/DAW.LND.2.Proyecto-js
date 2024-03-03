@@ -1,5 +1,3 @@
-BS
-    -BS5 Pagination
 JS
    	-Dos botones en cada página que cambien el estilo de imágenes, formulario, párrafos o títulos
 	-Cambiar tamaño y color de letras y fondo de un dropdown mediante JS
