@@ -13,7 +13,7 @@ let operacionElegida, valor1, valor2
 
 function pideValores() {
   operacionElegida = prompt(
-    "Elija la operación a realizar: 1 para suma, 2 resta, 3 multiplicación, 4 división."
+    "Elija la operación a realizar:\n\t (1) para SUMA.\n\t (2) para RESTA. \n\t (3) para MULTIPLICACIÓN.\n\t (4) para DIVISIÓN."
   );
   valor1 = parseInt(prompt("Introduzca el primer operando (valor numérico)"));
   valor2 = parseInt(prompt("Introduzca el segundo operando (valor numérico)"));
@@ -47,3 +47,20 @@ function card() {
   let res = calcula(operacionElegida);
   document.getElementById("resultado").innerHTML = `Resultado de la ${operacionElegida}<br> de ${valor1} y ${valor2}: ${res}`;
 }
+
+
+// BARRA DE PROGRESO
+
+window.onscroll = function () {
+  myFunction()
+};
+
+function myFunction() {
+  var scroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var altura = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var progreso = (scroll / altura) * 100;
+  document.getElementById("progreso").style.width = progreso + "%";
+}
+
+document.getElementById("progress").style.height = "5px";
+document.getElementById("progress").style.zIndex = "-1";

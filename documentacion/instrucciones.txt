@@ -1,3 +1,20 @@
+BS
+    -BS5 Alerts
+    -BS5 Spinners
+    -BS5 Collapse
+    -BS5 Tables
+    -BS5 Pagination
+    -BS5 Badges
+    -BS5 List Groups
+JS
+   	-Dos botones en cada página que cambien el estilo de imágenes, formulario, párrafos o títulos
+	-Cambiar tamaño y color de letras y fondo de un dropdown mediante JS
+	-Rellenar una tabla (5 lineas y 5 columnas) con valores introducidos mediante prompt, solicitados al pulsar un botón
+
+    -VALIDAR
+
+---------------------------------------------------------------------------------------------------------
+
 - 5 páginas:
 	-pag Home (con artículos, imágenes y cards)
 	-pag Galería de fotos + algún otro contenido
@@ -12,24 +29,25 @@ HTML:
 
 BS:
 - Clases BS:
-    -BS5 Typography
+    OK -BS5 Typography
     -BS5 Alerts
     -BS5 Spinners
-    -BS5 Dropdowns
-    -BS5 Colors
-    -BS5 Buttons
+    OK -BS5 Dropdowns
+    OK -BS5 Colors
+    OK -BS5 Buttons
     -BS5 Collapse
     -BS5 Tables
-    -BS5 Button Groups
+    OK -BS5 Button Groups
     -BS5 Pagination
-    -BS5 Navs
-    -BS5 Images
+    OK -BS5 Navs
+    OK -BS5 Images
     -BS5 Badges
     -BS5 List Groups
-    -BS5 Navbar
-    -BS5 Jumbotron
-    -BS5 Progress Bars
-    -BS5 Cards
+    OK -BS5 Navbar
+    OK -BS5 Jumbotron
+    OK -BS5 Progress Bars
+    OK -BS5 Cards
+
 - BS responsive: desktop, tablets y smartphones
 
 -JS

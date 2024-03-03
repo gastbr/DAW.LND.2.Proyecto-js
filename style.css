@@ -7,3 +7,22 @@
 .card-text {
     max-height: 5em;
 }
+
+.jumbotron {
+    background-image: url("https://www.supercarexperiences.com/wp-content/uploads/2019/02/hyper.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+    background-color: gray;
+    background-attachment: fixed;
+}
+
+.dropdown-menu * {
+    position: relative;
+    z-index: 5;
+}
+
+#progress {
+    height: 5px;
+    position: sticky;
+    z-index: 0;
+}
