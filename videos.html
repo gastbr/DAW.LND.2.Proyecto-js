@@ -37,14 +37,68 @@
             <div id="progreso" class="progress-bar progress-bar-striped progress-bar-animated bg-info"></div>
         </div>
     </div>
-
+    
     <main class="p-3">
+        <div id="liveAlertPlaceholder"></div>
+        <article>
+            <h1 class="display-5 m-3">Galería de vídeos</h1>
 
-        <h1>Videos</h1>
+            
+            <section class="row">
+                <p class="d-inline-flex gap-1">
+                    <button id="liveAlertBtn" class="btn btn-primary position-relative mx-5" type="button" data-bs-toggle="collapse" data-bs-target="#video1" aria-expanded="false" aria-controls="collapse">
+                        VÍDEO 1
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">Nuevo</span>
+                    </button>
+                    <button id="liveAlertBtn" class="btn btn-primary mx-5" type="button" data-bs-toggle="collapse" data-bs-target="#video2" aria-expanded="false" aria-controls="collapse">
+                        VÍDEO 2
+                    </button>
+                    <button id="liveAlertBtn" class="btn btn-primary mx-5" type="button" data-bs-toggle="collapse" data-bs-target="#video3" aria-expanded="false" aria-controls="collapse">
+                        VÍDEO 3
+                    </button>
+                </p>
+                
+                <div class="collapse col-12 col-md-6 p-3" id="video1">
+                    <div class="card card-body">
+                        <video controls src="media/vid/1.mp4"></video>
+                        <button class="btn btn-primary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#video1" aria-expanded="false" aria-controls="collapse">
+                            Cerrar
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="collapse col-12 col-md-6 p-3" id="video2">
+                    <div class="card card-body">
+                        <video controls src="media/vid/2.mp4"></video>
+                        <button class="btn btn-primary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#video2" aria-expanded="false" aria-controls="collapse">
+                            Cerrar
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="collapse col-12 col-md-6 p-3" id="video3">
+                    <div class="card card-body">
+                        <video controls src="media/vid/3.mp4"></video>
+                        <button class="btn btn-primary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#video3" aria-expanded="false" aria-controls="collapse">
+                            Cerrar
+                        </button>
+                    </div>
+                </div>
+            </section>
 
+            <section>
+                <ul class="list-group list-group-flush mx-5">
+                    <li class="list-group-item p-5"><p>No esperes más y reserva ya tu coche de alquiler con Rent a Car, la mejor opción para tus viajes. Visita nuestra web 1 o llama al 900 123 456 y empieza a disfrutar de las ventajas de alquilar con nosotros. Rent a Car, tu compañero de viaje ideal.</p></li>
+                    <li class="list-group-item p-5"><p>Además, te garantizamos la máxima flexibilidad y seguridad en tu reserva. Puedes cancelar o cambiar gratis hasta 48 horas antes de la recogida, y pagar por adelantado para ahorrar un 10%. También te igualamos el precio si encuentras una oferta más baja en otra web. Y si tienes alguna duda o problema, nuestro servicio de atención al cliente te atenderá en más de 40 idiomas.</p></li>
+                  </ul>
+            </section>
+            
+        </article>
+        
     </main>
-
-
+    
+    
+    
     <footer class="container-fluid bg-dark pb-5">
         <div class="row">
             <aside class="container col-12 col-md-8">

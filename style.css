@@ -21,3 +21,8 @@
     position: relative;
     z-index: 1021;
 }
+
+#carousel * {
+    max-height: 100vh;
+    object-fit: cover;
+}

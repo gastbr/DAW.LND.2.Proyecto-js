@@ -1,11 +1,6 @@
 BS
-    -BS5 Alerts
     -BS5 Spinners
-    -BS5 Collapse
-    -BS5 Tables
     -BS5 Pagination
-    -BS5 Badges
-    -BS5 List Groups
 JS
    	-Dos botones en cada página que cambien el estilo de imágenes, formulario, párrafos o títulos
 	-Cambiar tamaño y color de letras y fondo de un dropdown mediante JS
