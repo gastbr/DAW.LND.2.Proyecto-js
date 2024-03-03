@@ -8,10 +8,6 @@
     max-height: 5em;
 }
 
-header {
-    height: 18vh;
-}
-
 .jumbotron {
     background-image: url("https://www.supercarexperiences.com/wp-content/uploads/2019/02/hyper.jpg");
     background-size: cover;
@@ -19,7 +15,7 @@ header {
     background-color: gray;
     background-attachment: fixed;
     background-position: 50%;
-    height: 81vh;
+    height: 88vh;
 }
 
 .dropdown-menu {
