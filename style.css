@@ -14,15 +14,10 @@
     background-blend-mode: darken;
     background-color: gray;
     background-attachment: fixed;
+    background-position: 50%;
 }
 
-.dropdown-menu * {
+.dropdown-menu {
     position: relative;
-    z-index: 5;
-}
-
-#progress {
-    height: 5px;
-    position: sticky;
-    z-index: 0;
+    z-index: 1021;
 }

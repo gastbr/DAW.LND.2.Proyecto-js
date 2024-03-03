@@ -63,4 +63,3 @@ function myFunction() {
 }
 
 document.getElementById("progress").style.height = "5px";
-document.getElementById("progress").style.zIndex = "-1";
