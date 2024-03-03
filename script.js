@@ -99,3 +99,9 @@ if (alertTrigger3) {
     appendAlert('Se ha abierto un video.', 'success')
   })
 }
+
+// TRIGGER SPINNER
+
+function spinner() {
+  document.getElementById('spinner').style.display = "block";
+}

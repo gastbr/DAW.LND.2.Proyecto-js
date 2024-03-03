@@ -1,5 +1,4 @@
 BS
-    -BS5 Spinners
     -BS5 Pagination
 JS
    	-Dos botones en cada página que cambien el estilo de imágenes, formulario, párrafos o títulos
