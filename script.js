@@ -79,9 +79,23 @@ const appendAlert = (message, type) => {
   alertPlaceholder.append(wrapper)
 }
 
-const alertTrigger = document.getElementById('liveAlertBtn')
-if (alertTrigger) {
-  alertTrigger.addEventListener('click', () => {
+const alertTrigger1 = document.getElementById('liveAlertBtn1')
+if (alertTrigger1) {
+  alertTrigger1.addEventListener('click', () => {
+    appendAlert('Se ha abierto un video.', 'success')
+  })
+}
+
+const alertTrigger2 = document.getElementById('liveAlertBtn2')
+if (alertTrigger2) {
+  alertTrigger2.addEventListener('click', () => {
+    appendAlert('Se ha abierto un video.', 'success')
+  })
+}
+
+const alertTrigger3 = document.getElementById('liveAlertBtn3')
+if (alertTrigger3) {
+  alertTrigger3.addEventListener('click', () => {
     appendAlert('Se ha abierto un video.', 'success')
   })
 }
