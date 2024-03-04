@@ -29,3 +29,12 @@
     max-height: 100vh;
     object-fit: cover;
 }
+
+/* Propiedades modificadas solo para poder revertirlas con JS */
+
+body {
+    background-color: rgb(108, 117, 125);
+    font-family: 'Segoe UI';
+    font-size: 10rem;
+    color: blue;
+}

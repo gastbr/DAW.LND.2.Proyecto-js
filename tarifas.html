@@ -12,16 +12,17 @@
     <title>Proyecto 2 - LND</title>
 </head>
 
-<body class="bg-secondary">
+<body id="body">
 
-    <header class="justify-content-between row mw-100 p-2 border-bottom">
+    <header class="justify-content-between align-items-center row mw-100">
         <div class="col-3">
             <a href="index.html"><img id="logo" class="img-fluid p-2" src="media/img/logo.png" alt="Logo de la empresa"></a>
         </div>
-        <nav class="col-9 btn-group align-items-center" aria-label="Navegador principal">
+
+        <nav class="col-7 btn-group" aria-label="Navegador principal">
             <div class="dropdown">
                 <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Rent-a-car</button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <ul id="dropdown" class="dropdown-menu" aria-labelledby="dropdownMenu2">
                     <li><a href="index.html" role="button" type="button" class="btn dropdown-item">Inicio</a></li>
                     <li><a href="tarifas.html" role="button" type="button" class="btn dropdown-item">Tarifas</a></li>
                     <li><a href="imagenes.html" role="button" type="button" class="btn dropdown-item">Imágenes</a></li>
@@ -30,6 +31,12 @@
             </div>
             <div><a href="contacto.html" role="button" type="button" class="btn btn-success">Contacto</a></div>
         </nav>
+
+        <div class="col-2 d-flex flex-column gap-1 my-1">
+            <button onclick="cambiaColor()" role="button" class="sticky-top btn btn-dark btn-sm" type="button" style="width: fit-content; height: fit-content"><i class="bi bi-palette"></i></button>
+            <button onclick="cambiaFuente()" role="button" class="btn btn-dark btn-sm" type="button" style="width: fit-content; height: fit-content"><i class="bi bi-fonts"></i></button>
+        </div>
+
     </header>
 
     <div class="sticky-top">
@@ -42,40 +49,41 @@
         <article class="row">
             <h1 class="display-5 p-3">Tarifas</h1>
             <section class="col-12 col-sm-11 col-md-9 col-lg-7 m-auto overflow-x-auto">
+                <button type="button" onclick="editarTabla()" class="btn btn-warning mb-3">Editar tabla</button>
                 <table class="table table-dark text-center table-hover table-striped">
                     <thead>
                         <tr>
-                            <th scope="col">TARIFA</th>
-                            <th scope="col">Modelo Rojo</th>
-                            <th scope="col">Modelo Azul</th>
-                            <th scope="col">Modelo Naranja</th>
-                            <th scope="col">Modelo Rosa</th>
+                            <th id="celda1" scope="col">TARIFA</th>
+                            <th id="celda2" scope="col">Modelo Rojo</th>
+                            <th id="celda3" scope="col">Modelo Azul</th>
+                            <th id="celda4" scope="col">Modelo Naranja</th>
+                            <th id="celda5" scope="col">Modelo Rosa</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row">Básica</th>
-                            <td>60€ / día</td>
-                            <td>75€ / día</td>
-                            <td>130€ / día</td>
-                            <td>150€ / día</td>
+                            <th id="celda6" scope="row">Básica</th>
+                            <td id="celda7">60€ / día</td>
+                            <td id="celda8">75€ / día</td>
+                            <td id="celda9">130€ / día</td>
+                            <td id="celda10">150€ / día</td>
                         </tr>
                         <tr>
-                            <th scope="row">Premium</th>
-                            <td>90€ / día</td>
-                            <td>120€ / día</td>
-                            <td>160€ / día</td>
-                            <td>200€ / día</td>
+                            <th id="celda11" scope="row">Premium</th>
+                            <td id="celda12">90€ / día</td>
+                            <td id="celda13">120€ / día</td>
+                            <td id="celda14">160€ / día</td>
+                            <td id="celda15">200€ / día</td>
                         </tr>
                         <tr>
-                            <th scope="row">Superior</th>
-                            <td colspan="2">135€ / día</td>
-                            <td>230€ / día</td>
-                            <td>260€ / día</td>
+                            <th id="celda16" scope="row">Superior</th>
+                            <td id="celda17" colspan="2">135€ / día</td>
+                            <td id="celda18">230€ / día</td>
+                            <td id="celda19">260€ / día</td>
                         </tr>
                         <tr>
-                            <th scope="row">Deluxe</th>
-                            <td colspan="4">350 € /día</td>
+                            <th id="celda20" scope="row">Deluxe</th>
+                            <td id="celda21" colspan="4">350 € /día</td>
                         </tr>
                     </tbody>
                 </table>

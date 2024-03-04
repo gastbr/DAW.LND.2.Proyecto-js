@@ -12,16 +12,17 @@
     <title>Proyecto 2 - LND</title>
 </head>
 
-<body class="bg-secondary">
+<body id="body">
 
-    <header class="justify-content-between row mw-100 p-2 border-bottom">
+    <header class="justify-content-between align-items-center row mw-100">
         <div class="col-3">
             <a href="index.html"><img id="logo" class="img-fluid p-2" src="media/img/logo.png" alt="Logo de la empresa"></a>
         </div>
-        <nav class="col-9 btn-group align-items-center" aria-label="Navegador principal">
+
+        <nav class="col-7 btn-group" aria-label="Navegador principal">
             <div class="dropdown">
                 <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Rent-a-car</button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <ul id="dropdown" class="dropdown-menu" aria-labelledby="dropdownMenu2">
                     <li><a href="index.html" role="button" type="button" class="btn dropdown-item">Inicio</a></li>
                     <li><a href="tarifas.html" role="button" type="button" class="btn dropdown-item">Tarifas</a></li>
                     <li><a href="imagenes.html" role="button" type="button" class="btn dropdown-item">Imágenes</a></li>
@@ -30,6 +31,12 @@
             </div>
             <div><a href="contacto.html" role="button" type="button" class="btn btn-success">Contacto</a></div>
         </nav>
+
+        <div class="col-2 d-flex flex-column gap-1 my-1">
+            <button onclick="cambiaColor()" role="button" class="sticky-top btn btn-dark btn-sm" type="button" style="width: fit-content; height: fit-content"><i class="bi bi-palette"></i></button>
+            <button onclick="cambiaFuente()" role="button" class="btn btn-dark btn-sm" type="button" style="width: fit-content; height: fit-content"><i class="bi bi-fonts"></i></button>
+        </div>
+
     </header>
 
     <div class="sticky-top">

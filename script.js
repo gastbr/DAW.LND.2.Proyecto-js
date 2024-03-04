@@ -1,12 +1,8 @@
 /* 
--JS
-  -Resolver problema y mostrarlo en un card, con un botón para pedir el prompt:
-    -Se le pedirá al usuario 2 números para generar la suma, la resta, la división y la multiplicación entre ellos.
-        -Se debe preguntar al usuario que operación quiere realizar antes de que ingrese los dos números a operar.
-        -Si el usuario no ingresa ninguna respuesta, automáticamente informarle que deberá ingresar un dato (usar funciones y min 1 condicion, caso o ciclo)
-  -Dos botones en cada página que cambien el estilo de imágenes, formulario, párrafos o títulos
-  -Cambiar tamaño y color de letras y fondo de un dropdown mediante JS
-  -Rellenar una tabla (5 lineas y 5 columnas) con valores introducidos mediante prompt, solicitados al pulsar un botón
+Resolver problema y mostrarlo en un card, con un botón para pedir el prompt:
+  Se le pedirá al usuario 2 números para generar la suma, la resta, la división y la multiplicación entre ellos.
+  Se debe preguntar al usuario que operación quiere realizar antes de que ingrese los dos números a operar.
+  Si el usuario no ingresa ninguna respuesta, automáticamente informarle que deberá ingresar un dato (usar funciones y min 1 condicion, caso o ciclo)
 */
 
 let operacionElegida, valor1, valor2
@@ -48,16 +44,40 @@ function card() {
   document.getElementById("resultado").innerHTML = `Resultado de la ${operacionElegida}<br> de ${valor1} y ${valor2}: ${res}`;
 }
 
- // Dos botones en cada página que cambien el estilo de imágenes, formulario, párrafos o títulos
+// Dos botones en cada página que cambien el estilo de imágenes, formulario, párrafos o títulos
 
- function cambiaColor() {
-  
- }
+function cambiaColor() {
+  if (document.getElementById("body").style.background == 'rgb(230, 231, 232)') {
+    document.getElementById("body").style.background = 'rgb(108, 117, 125)';
+  } else {
+    document.getElementById("body").style.background = 'rgb(230, 231, 232)';
+  }
+}
 
- // Cambiar tamaño y color de letras y fondo de un dropdown mediante JS
- 
- // Rellenar una tabla (5 lineas y 5 columnas) con valores introducidos mediante prompt, solicitados al pulsar un botón
+function cambiaFuente() {
+  if (document.getElementById("body").style.fontFamily == 'serif') {
+    document.getElementById("body").style.fontFamily = 'Segoe UI';
+  } else {
+    document.getElementById("body").style.fontFamily = 'serif';
+  }
+}
 
+// Cambiar tamaño y color de letras y fondo de un dropdown mediante JS
+
+document.getElementById("body").style.fontSize = '1rem';
+document.getElementById("body").style.color = '#212529';
+document.getElementById("dropdown").style.backgroundColor = '#71b092';
+
+// Rellenar una tabla (5 lineas y 5 columnas) con valores introducidos mediante prompt, solicitados al pulsar un botón
+
+function editarTabla() {
+  let datos
+  datos = prompt("Introduzca todos los datos (21 cadenas de texto) a introducir en la tabla, separados por una barra (/).").split("/",21)
+
+  for (let i = 0; i < datos.length; i++) {
+    document.getElementById("celda" + (i + 1)).innerHTML = datos[i]
+  }
+}
 
 // BARRA DE PROGRESO
 

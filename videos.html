@@ -12,16 +12,17 @@
     <title>Proyecto 2 - LND</title>
 </head>
 
-<body class="bg-secondary">
+<body id="body">
 
-    <header class="justify-content-between row mw-100 p-2 border-bottom">
+    <header class="justify-content-between align-items-center row mw-100">
         <div class="col-3">
             <a href="index.html"><img id="logo" class="img-fluid p-2" src="media/img/logo.png" alt="Logo de la empresa"></a>
         </div>
-        <nav class="col-9 btn-group align-items-center" aria-label="Navegador principal">
+
+        <nav class="col-7 btn-group" aria-label="Navegador principal">
             <div class="dropdown">
                 <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Rent-a-car</button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <ul id="dropdown" class="dropdown-menu" aria-labelledby="dropdownMenu2">
                     <li><a href="index.html" role="button" type="button" class="btn dropdown-item">Inicio</a></li>
                     <li><a href="tarifas.html" role="button" type="button" class="btn dropdown-item">Tarifas</a></li>
                     <li><a href="imagenes.html" role="button" type="button" class="btn dropdown-item">Imágenes</a></li>
@@ -30,6 +31,12 @@
             </div>
             <div><a href="contacto.html" role="button" type="button" class="btn btn-success">Contacto</a></div>
         </nav>
+
+        <div class="col-2 d-flex flex-column gap-1 my-1">
+            <button onclick="cambiaColor()" role="button" class="sticky-top btn btn-dark btn-sm" type="button" style="width: fit-content; height: fit-content"><i class="bi bi-palette"></i></button>
+            <button onclick="cambiaFuente()" role="button" class="btn btn-dark btn-sm" type="button" style="width: fit-content; height: fit-content"><i class="bi bi-fonts"></i></button>
+        </div>
+
     </header>
 
     <div class="sticky-top">
@@ -37,13 +44,13 @@
             <div id="progreso" class="progress-bar progress-bar-striped progress-bar-animated bg-info"></div>
         </div>
     </div>
-    
+
     <main class="p-3">
         <div id="liveAlertPlaceholder"></div>
         <article>
             <h1 class="display-5 p-3">Galería de vídeos</h1>
 
-            
+
             <section class="row">
                 <p class="d-inline-flex gap-4">
                     <button id="liveAlertBtn1" class="btn btn-primary position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#video1" aria-expanded="false" aria-controls="collapse">
@@ -57,7 +64,7 @@
                         VÍDEO 3
                     </button>
                 </p>
-                
+
                 <div class="collapse col-12 col-md-6 p-3" id="video1">
                     <div class="card card-body">
                         <video controls src="media/vid/1.mp4"></video>
@@ -66,7 +73,7 @@
                         </button>
                     </div>
                 </div>
-                
+
                 <div class="collapse col-12 col-md-6 p-3" id="video2">
                     <div class="card card-body">
                         <video controls src="media/vid/2.mp4"></video>
@@ -75,7 +82,7 @@
                         </button>
                     </div>
                 </div>
-                
+
                 <div class="collapse col-12 col-md-6 p-3" id="video3">
                     <div class="card card-body">
                         <video controls src="media/vid/3.mp4"></video>
@@ -88,17 +95,21 @@
 
             <section>
                 <ul class="list-group list-group-flush mx-5">
-                    <li class="list-group-item p-5"><p>No esperes más y reserva ya tu coche de alquiler con Rent a Car, la mejor opción para tus viajes. Visita nuestra web 1 o llama al 900 123 456 y empieza a disfrutar de las ventajas de alquilar con nosotros. Rent a Car, tu compañero de viaje ideal.</p></li>
-                    <li class="list-group-item p-5"><p>Además, te garantizamos la máxima flexibilidad y seguridad en tu reserva. Puedes cancelar o cambiar gratis hasta 48 horas antes de la recogida, y pagar por adelantado para ahorrar un 10%. También te igualamos el precio si encuentras una oferta más baja en otra web. Y si tienes alguna duda o problema, nuestro servicio de atención al cliente te atenderá en más de 40 idiomas.</p></li>
-                  </ul>
+                    <li class="list-group-item p-5">
+                        <p>No esperes más y reserva ya tu coche de alquiler con Rent a Car, la mejor opción para tus viajes. Visita nuestra web 1 o llama al 900 123 456 y empieza a disfrutar de las ventajas de alquilar con nosotros. Rent a Car, tu compañero de viaje ideal.</p>
+                    </li>
+                    <li class="list-group-item p-5">
+                        <p>Además, te garantizamos la máxima flexibilidad y seguridad en tu reserva. Puedes cancelar o cambiar gratis hasta 48 horas antes de la recogida, y pagar por adelantado para ahorrar un 10%. También te igualamos el precio si encuentras una oferta más baja en otra web. Y si tienes alguna duda o problema, nuestro servicio de atención al cliente te atenderá en más de 40 idiomas.</p>
+                    </li>
+                </ul>
             </section>
-            
+
         </article>
-        
+
     </main>
-    
-    
-    
+
+
+
     <footer class="container-fluid bg-dark pb-5">
         <div class="row">
             <aside class="container col-12 col-md-8">
