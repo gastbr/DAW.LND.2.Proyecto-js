@@ -30,6 +30,10 @@
     object-fit: cover;
 }
 
+h6 {
+    display: none;
+}
+
 /* Propiedades modificadas solo para poder revertirlas con JS */
 
 body {

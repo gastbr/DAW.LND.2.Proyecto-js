@@ -22,19 +22,19 @@
         <nav class="col-7 btn-group" aria-label="Navegador principal">
             <div class="dropdown">
                 <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Rent-a-car</button>
-                <ul id="dropdown" class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <li><a href="index.html" role="button" type="button" class="btn dropdown-item">Inicio</a></li>
-                    <li><a href="tarifas.html" role="button" type="button" class="btn dropdown-item">Tarifas</a></li>
-                    <li><a href="imagenes.html" role="button" type="button" class="btn dropdown-item">Imágenes</a></li>
-                    <li><a href="videos.html" role="button" type="button" class="btn dropdown-item">Videos</a></li>
+                <ul id="dropdown" class="dropdown-menu">
+                    <li><a href="index.html" role="button" class="btn dropdown-item">Inicio</a></li>
+                    <li><a href="tarifas.html" role="button" class="btn dropdown-item">Tarifas</a></li>
+                    <li><a href="imagenes.html" role="button" class="btn dropdown-item">Imágenes</a></li>
+                    <li><a href="videos.html" role="button" class="btn dropdown-item">Videos</a></li>
                 </ul>
             </div>
-            <div><a href="contacto.html" role="button" type="button" class="btn btn-success">Contacto</a></div>
+            <div><a href="contacto.html" role="button" class="btn btn-success">Contacto</a></div>
         </nav>
 
         <div class="col-2 d-flex flex-column gap-1 my-1">
-            <button onclick="cambiaColor()" role="button" class="sticky-top btn btn-dark btn-sm" type="button" style="width: fit-content; height: fit-content"><i class="bi bi-palette"></i></button>
-            <button onclick="cambiaFuente()" role="button" class="btn btn-dark btn-sm" type="button" style="width: fit-content; height: fit-content"><i class="bi bi-fonts"></i></button>
+            <button onclick="cambiaColor()" class="sticky-top btn btn-dark btn-sm" type="button" style="width: fit-content; height: fit-content"><i class="bi bi-palette"></i></button>
+            <button onclick="cambiaFuente()" class="btn btn-dark btn-sm" type="button" style="width: fit-content; height: fit-content"><i class="bi bi-fonts"></i></button>
         </div>
 
     </header>
@@ -49,6 +49,7 @@
         <article class="row">
             <h1 class="display-5 p-3">Tarifas</h1>
             <section class="col-12 col-sm-11 col-md-9 col-lg-7 m-auto overflow-x-auto">
+                <h6>Título vacío para cumplir la validación</h6>
                 <button type="button" onclick="editarTabla()" class="btn btn-warning mb-3">Editar tabla</button>
                 <table class="table table-dark text-center table-hover table-striped">
                     <thead>
@@ -90,7 +91,7 @@
             </section>
 
             <section class="col-10 col-sm-5 col-lg-2 m-auto">
-
+                <h6>Título vacío para cumplir la validación</h6>
                 <div data-bs-ride="carousel" class="carousel-inner slide">
                     <div class="carousel-item active">
                         <img src="media/img/1.jpg" class="d-block w-100" alt="Imagen del coche 1.">

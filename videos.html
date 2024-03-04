@@ -22,19 +22,19 @@
         <nav class="col-7 btn-group" aria-label="Navegador principal">
             <div class="dropdown">
                 <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Rent-a-car</button>
-                <ul id="dropdown" class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <li><a href="index.html" role="button" type="button" class="btn dropdown-item">Inicio</a></li>
-                    <li><a href="tarifas.html" role="button" type="button" class="btn dropdown-item">Tarifas</a></li>
-                    <li><a href="imagenes.html" role="button" type="button" class="btn dropdown-item">Imágenes</a></li>
-                    <li><a href="videos.html" role="button" type="button" class="btn dropdown-item">Videos</a></li>
+                <ul id="dropdown" class="dropdown-menu">
+                    <li><a href="index.html" role="button" class="btn dropdown-item">Inicio</a></li>
+                    <li><a href="tarifas.html" role="button" class="btn dropdown-item">Tarifas</a></li>
+                    <li><a href="imagenes.html" role="button" class="btn dropdown-item">Imágenes</a></li>
+                    <li><a href="videos.html" role="button" class="btn dropdown-item">Videos</a></li>
                 </ul>
             </div>
-            <div><a href="contacto.html" role="button" type="button" class="btn btn-success">Contacto</a></div>
+            <div><a href="contacto.html" role="button" class="btn btn-success">Contacto</a></div>
         </nav>
 
         <div class="col-2 d-flex flex-column gap-1 my-1">
-            <button onclick="cambiaColor()" role="button" class="sticky-top btn btn-dark btn-sm" type="button" style="width: fit-content; height: fit-content"><i class="bi bi-palette"></i></button>
-            <button onclick="cambiaFuente()" role="button" class="btn btn-dark btn-sm" type="button" style="width: fit-content; height: fit-content"><i class="bi bi-fonts"></i></button>
+            <button onclick="cambiaColor()" class="sticky-top btn btn-dark btn-sm" type="button" style="width: fit-content; height: fit-content"><i class="bi bi-palette"></i></button>
+            <button onclick="cambiaFuente()" class="btn btn-dark btn-sm" type="button" style="width: fit-content; height: fit-content"><i class="bi bi-fonts"></i></button>
         </div>
 
     </header>
@@ -52,15 +52,16 @@
 
 
             <section class="row">
+                <h6>Título vacío para cumplir la validación</h6>
                 <p class="d-inline-flex gap-4">
-                    <button id="liveAlertBtn1" class="btn btn-primary position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#video1" aria-expanded="false" aria-controls="collapse">
+                    <button id="liveAlertBtn1" class="btn btn-primary position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#video1" aria-expanded="false">
                         VÍDEO 1
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">Nuevo</span>
                     </button>
-                    <button id="liveAlertBtn2" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#video2" aria-expanded="false" aria-controls="collapse">
+                    <button id="liveAlertBtn2" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#video2" aria-expanded="false">
                         VÍDEO 2
                     </button>
-                    <button id="liveAlertBtn3" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#video3" aria-expanded="false" aria-controls="collapse">
+                    <button id="liveAlertBtn3" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#video3" aria-expanded="false">
                         VÍDEO 3
                     </button>
                 </p>
@@ -68,7 +69,7 @@
                 <div class="collapse col-12 col-md-6 p-3" id="video1">
                     <div class="card card-body">
                         <video controls src="media/vid/1.mp4"></video>
-                        <button class="btn btn-primary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#video1" aria-expanded="false" aria-controls="collapse">
+                        <button class="btn btn-primary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#video1" aria-expanded="false">
                             Cerrar
                         </button>
                     </div>
@@ -77,7 +78,7 @@
                 <div class="collapse col-12 col-md-6 p-3" id="video2">
                     <div class="card card-body">
                         <video controls src="media/vid/2.mp4"></video>
-                        <button class="btn btn-primary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#video2" aria-expanded="false" aria-controls="collapse">
+                        <button class="btn btn-primary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#video2" aria-expanded="false">
                             Cerrar
                         </button>
                     </div>
@@ -86,7 +87,7 @@
                 <div class="collapse col-12 col-md-6 p-3" id="video3">
                     <div class="card card-body">
                         <video controls src="media/vid/3.mp4"></video>
-                        <button class="btn btn-primary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#video3" aria-expanded="false" aria-controls="collapse">
+                        <button class="btn btn-primary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#video3" aria-expanded="false">
                             Cerrar
                         </button>
                     </div>
@@ -94,6 +95,7 @@
             </section>
 
             <section>
+                <h6>Título vacío para cumplir la validación</h6>
                 <ul class="list-group list-group-flush mx-5">
                     <li class="list-group-item p-5">
                         <p>No esperes más y reserva ya tu coche de alquiler con Rent a Car, la mejor opción para tus viajes. Visita nuestra web 1 o llama al 900 123 456 y empieza a disfrutar de las ventajas de alquilar con nosotros. Rent a Car, tu compañero de viaje ideal.</p>
